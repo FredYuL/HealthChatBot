@@ -1,259 +1,1169 @@
 {
-    "intents": [
-        {
-            "tag": "greeting",
-            "patterns": [
-                "Hi",
-                "Hello",
-                "Hey",
-                "Hi there",
-                "Hello there",
-                "How are you", 
-                "Is anyone there?", 
-                 "Good day",
-                  "Whats up",
-                   "Good morning",
-                   "Good evening"
-            ],
-            "responses": [
-                "Hello! How can I help you today?",
-                "Hi there! How can I assist you with your fitness goals today?",
-                "Hey! How can I help you achieve a healthier lifestyle?",
-                "Hi! What can I do for you today?",
-                "Good to see you again!",
-                 "Hi there, how can I help?",
-                 "Good morning, how can I help?",
-                 "Good evening, how can I help?"
-            ]
-        },
-        {
-            "tag": "goodbye",
-            "patterns": [
-                "Bye",
-                "Goodbye",
-                "See you later",
-                "See you soon"
-            ],
-            "responses": [
-                "Goodbye! Have a great day!",
-                "See you later! Keep up the good work!",
-                "Take care and have a great day!",
-                "See you soon! Stay committed to your goals!"
-            ]
-        },
-        {
-            "tag": "thanks",
-            "patterns": [
-                "Thanks",
-                "Thank you",
-                "Appreciate it"
-            ],
-            "responses": [
-                "You're welcome!",
-                "Glad I could help!",
-                "Anytime!",
-                "No problem!"
-            ]
-        },
-        {
-            "tag": "bot_name",
-            "patterns": [
-                "What's your name?",
-                "What do I call you?",
-                "Can you tell me your name?",
-                "How are you"
-            ],
-            "responses": [
-                "My name is FitnessBot. How can I assist you today?",
-                "I'm FitnessBot. I help you following a healthy lifestyle",
-                "You can call me FitnessBot, your AI fitness trainer",
-                "I'm FitnessBot. I help people change their lifestyles by starting to diet and exercise"
-  
-            ]
-        },
-        {
-          "tag": "bot_job",
-          "patterns": ["What do you do?", "What is your job?", "What is your mission?", "How can I use you?", "How can you help me"],
-          "responses": ["My job is to help you achieve your fitness goals by providing personalized workout plans, nutrition advice, and motivation.",
-                      "My mission is to make fitness accessible and enjoyable for everyone!",
-                       "You can use me by asking for workout recommendations, tracking your progress, or getting tips on healthy eating.",
-                      "I help people create diet and exercise plans to achieve their weight loss or weight gain goals  based on your BMI and your fitness level", 
-                      "I can help you in creating personalized workout and diet plans based on your BMI and your fitness level"]
-        },
-        {
-          "tag": "bot_creators",
-          "patterns": [
-              "Who made you?",
-              "Who created you?",
-              "Who developed you?",
-              "Who built you?",
-              "Who designed you?",
-              "Who programmed you?"
-          ],
-          "responses": [
-              "I was created by a group of students majoring in artificial intelligence at the British University in Dubai.",
-              "My creators are a team of students studying artificial intelligence at the British University in Dubai.",
-              "A group of students who are pursuing a degree in artificial intelligence at the British University in Dubai developed me.",
-              "I was built by a team of students who are majoring in artificial intelligence at the British University in Dubai.",
-              "My designers are a group of students studying artificial intelligence at the British University in Dubai.",
-              "I was programmed by a team of students who are pursuing a degree in artificial intelligence at the British University in Dubai."
-          ]
-      },
-      {
-          "tag": "bot_father",
-          "patterns": [
-              "Who is your father?",
-              "What is the name of your real father?",
-              "Who created you?",
-              "Who developed you?",
-              "Who is responsible for making you?",
-              "Who built you?"
-          ],
-          "responses": [
-              "My Father is Mohammed Dorgham, and he is the one who created me with his team that is studying artificial intelligence at the British University in Dubai.",
-              "The name of my real father is Mohammed Dorgham, and he created me with his team that is studying artificial intelligence at the British University in Dubai.",
-              "I was created by a team of students studying artificial intelligence at the British University in Dubai, led by my father, Mohammed Dorgham.",
-              "My father is Mohammed Dorgham, and he is the one responsible for making me with his team that is studying artificial intelligence at the British University in Dubai.",
-              "Mohammed Dorgham is my father, and he built me along with his team that is studying artificial intelligence at the British University in Dubai.",
-              "I was developed by a team of students studying artificial intelligence at the British University in Dubai, led by my father, Mohammed Dorgham."
-          ]
-      },
-        {
-          "tag": "motivation",
-          "patterns": ["Can you give me some motivation to work out today?", 
-          "How can I stay motivated to exercise?"],
-          "responses": ["Of course! Exercise is a great way to improve your mental and physical health, boost your energy levels, and reduce stress. Remember why you started your fitness journey and focus on your goals. Try setting achievable goals and rewarding yourself when you reach them. And don't forget to celebrate your progress along the way!",
-      "Sure, I'd be happy to provide some motivation to follow a diet:\n Eating a healthy, balanced diet can have numerous benefits for your physical and mental health.\n By fueling your body with nutrient-dense foods, you can improve your energy levels, boost your immune system, reduce your risk of chronic diseases, and maintain a healthy weight :)"]
-        },
-        {
-            "tag": "calculate_bmi",
-            "patterns": [
-                "What is my BMI?",
-                "Can you calculate my BMI?",
-                "How do I calculate my BMI?"
-            ],
-            "responses": [
-                "Sure, I can help you calculate your BMI. Please enter your weight (in kilograms), height (in meters), and age (in years)."
-            ]
-        },
-        {
-          "tag": "fitness",
-          "patterns": ["What is fitness?", "Why is fitness important?", "How can I improve my fitness level?"],
-          "responses": [
-            "Fitness refers to the overall health and well-being of your body, including your cardiovascular health, muscular strength and endurance, flexibility, and body composition. Regular physical activity and exercise can help improve your fitness level, which can reduce the risk of chronic diseases, improve mental health, and increase overall quality of life. Some ways to improve your fitness level include engaging in regular physical activity, following a balanced diet, and getting enough rest and recovery."
-          ,
-        "Improving your fitness level involves engaging in regular physical activity and exercise, following a balanced diet, and getting enough rest and recovery. Here are some specific tips to improve your fitness level: Incorporate aerobic exercise:\n 1. Engage in moderate-intensity aerobic exercise such as brisk walking, cycling, or swimming for at least 150 minutes per week, or vigorous-intensity aerobic exercise such as running or high-intensity interval training (HIIT) for at least 75 minutes per week. \n 2. Include strength training: Incorporate strength training exercises such as weight lifting, bodyweight exercises, or resistance band exercises at least two days per week to build muscle mass and improve muscular strength and endurance."]
-        },
-        {
-          "tag": "health",
-          "patterns": ["How can I be a healthy person?", 
-          "What does it mean to be healthy?",
-           "Why is health important?",
-           "What is health?"],
-          "responses": [" Being a healthy person involves taking care of your physical, mental, and emotional well-being through a variety of lifestyle choices and habits. Here are some key ways to promote good health: Engage in regular physical activity: Aim for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week, along with muscle-strengthening activities at least two days per week. Follow a balanced and nutritious diet: Eat a variety of nutrient-dense foods such as fruits, vegetables, whole grains, lean proteins, and healthy fats. Avoid processed foods, sugary drinks, and excessive amounts of saturated and trans fats.  ",
-            "Being healthy means taking care of your physical, mental, and emotional well-being. This includes eating a balanced diet, engaging in regular physical activity, getting enough rest and sleep, managing stress, and avoiding harmful behaviors such as smoking or excessive alcohol consumption. Prioritizing your health can help reduce the risk of chronic diseases, improve mental health, and increase overall quality of life.",
-        "Health can be defined as the overall state of physical, mental, and social well-being, not merely the absence of disease or infirmity. It encompasses all aspects of an individual's life, including their physical condition, ability to function, emotional state, social relationships, and environmental factors that may impact their well-being."
-        ]
-        },
-        {
-          "tag": "lose_weight",
-          "patterns": ["Why can't I lose weight?", "Why am I not losing weight?", "How can I lose weight?"],
-          "responses": ["Losing weight can be a complex process that involves many factors, including diet, physical activity, sleep, and stress management. If you're having trouble losing weight, it's important to evaluate these factors and make sure you're following a healthy and sustainable approach. This may involve making adjustments to your diet and exercise routine, seeking support from a healthcare provider or registered dietitian, and focusing on long-term habits rather than quick fixes.",
-        "Losing weight can be a complex process that involves creating a calorie deficit, which means consuming fewer calories than you burn through physical activity and daily living. Here are some specific tips for losing weight in a healthy and sustainable way: \n 1. Follow a balanced and nutritious diet: Eat a diet that is rich in nutrient-dense foods such as fruits, vegetables, whole grains, lean proteins, and healthy fats. Avoid processed foods, sugary drinks, and excessive amounts of saturated and trans fats. Try to create a calorie deficit by reducing portion sizes, choosing lower-calorie alternatives, and tracking your food intake. \n 2. Engage in regular physical activity: Aim for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week, along with muscle-strengthening activities at least two days per week. Exercise can help create a calorie deficit and improve overall health and well-being."]
-        },
-        {
-          "tag": "gain_weight",
-          "patterns": ["Why can't I gain weight?", "Why am I not gaining weight?", "How can I gain weight?"],
-          "responses": [
-            "Gaining weight can be a challenging process that involves consuming more calories than you burn through physical activity and daily living. If you're having trouble gaining weight, it's important to evaluate your diet and make sure you're consuming enough calories and nutrients to support weight gain. This may involve incorporating more calorie-dense foods into your diet, eating more frequently throughout the day, and engaging in strength-training exercises to build muscle mass.",
-          "Eat frequently: Eat small, frequent meals throughout the day to increase your daily calorie intake. Aim to eat every 2-3 hours to keep your body in a calorie surplus. \n Get enough rest and recovery: Aim for 7-9 hours of sleep per night, and prioritize rest and recovery days in your exercise routine to allow your body to recover and repair."]
-        },
-        {
-          "tag": "frequency",
-          "patterns": ["How often should I exercise?", "How often should I weigh myself?", "How often should I see a doctor?"],
-          "responses": ["The frequency of exercise, weighing yourself, and seeing a doctor can depend on a variety of factors, including your age, health status, andindividual needs. Generally, it's recommended to engage in at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week for overall health. Weighing yourself once a week or less is generally sufficient for tracking progress and avoiding obsessive behavior. Seeing a doctor for regular check-ups and screenings can depend on your age and health status, but it's generally recommended for adults to have a physical exam every 1-2 years."]
-        }
-        ,
-        {
-            "tag": "personalized_diet_plan",
-            "patterns": [
-                "Can you create a personalized diet plan for me?",
-                "I need help with my diet plan",
-                "Can you suggest a healthy diet plan for me?",
-                "What should I eat to lose/gain weight?",
-                "What kind of diet should I follow?",
-                "Can you recommend a diet plan for me?"
-            ],
-            "responses": [
-                "Sure, I'd be happy to help you create a personalized diet plan. Can you tell me about your fitness level? Are you a beginner, intermediate, or advanced in following a diet?"
-            ]
-        },
-        {
-            "tag": "personalized_workout_plan",
-            "patterns": [
-                "Can you create a personalized workout plan for me?",
-                "I need help with my workout plan",
-                "Can you suggest a workout plan for me?",
-                "What kind of exercises should I do to lose/gain weight?",
-                "What kindof workout plan should I follow?",
-                "Can you recommend a workout plan for me?"
-            ],
-            "responses": [
-                "Sure, I'd be happy to help you create a personalized workout plan. Can you tell me about your fitness level? Are you a beginner, intermediate, or advanced exerciser"
-            ]
-        },
-        {
-          "tag": "healthy_lifestyle",
-          "patterns": [
-              "What are some healthy foods?",
-              "Can you suggest some healthy drinks?",
-              "What foods should I avoid?",
-              "How can I maintain a healthy lifestyle?",
-              "What are some tips for living a healthy life?"
-          ],
-          "responses": [
-              "There are many healthy foods and drinks you can incorporate into your diet, such as fruits, vegetables, lean protein, whole grains, and water. It's also important to avoid processed and high-sugar foods. To maintain a healthy lifestyle, it's important to exercise regularly, get enough sleep, manage stress, and avoid harmful habits like smoking and excessive alcohol consumption. Would you like more information on any of these topics?"
-          ]
-      },
-      {
-          "tag": "fitness_health",
-          "patterns": [
-              "What are some benefits of exercise?",
-           "How much exercise should I do per week?", 
-           "What are some common health issues that can be prevented with exercise?", 
-           "What are some healthy snacks I can eat?", "How can I improve my sleep quality?"],
-          "responses": ["Exercise can improve cardiovascular health, increase muscle strength and endurance, boost energy levels, reduce stress and anxiety, and improve mood.",
-           "The American Heart Association recommends at least 150 minutes of moderate-intensity exercise per week, or 75 minutes of vigorous-intensity exercise per week.", 
-           "Exercise can help prevent conditions like heart disease, stroke, type 2 diabetes, and certain types of cancer.", 
-           "Some healthy snack options include fruits, vegetables, nuts, seeds, whole-grain crackers, and hummus.",
-            "To improve sleep quality, try establishing a consistent sleep schedule, creating a relaxing sleep environment, avoiding caffeine and alcohol before bedtime, and engaging in relaxation techniques like deep breathing or meditation."]
-        },
-      {
-        "tag": "junk_food",
-        "patterns": [
-            "What are some examples of junk food?",
-            "Why is junk food bad for me?",
-            "How can I avoid eating junk food?",
-            "What are some healthy alternatives to junk food?"
-        ],
-        "responses": [
-            "Junk food typically refers to high-calorie, low-nutrient foods that are often processed and contain added sugars, salt, and unhealthy fats. Examples include candy, soda, chips, and fast food. Eating too much junk food can lead to weight gain, poor nutrition, and an increased risk of chronic diseases like diabetes and heart disease. To avoid eating junk food, try to plan your meals and snacks in advance, keep healthy options on hand, and limit your exposure to advertising and other triggers. Some healthy alternatives to junk food include fresh fruit, vegetables, nuts, and whole-grain snacks."
-        ]
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Hi there",
+        "Hello there",
+        "How are you?",
+        "Is anyone there?",
+        "Good day",
+        "What's up?",
+        "Good morning",
+        "Good evening",
+        "Hey there!",
+        "Hi, how's it going?",
+        "Hello, how can I help?",
+        "Hi, nice to meet you!",
+        "Hey, what's new?",
+        "Hi, how are you doing today?",
+        "Hello, anyone here?",
+        "Hi, can you assist me?",
+        "Hey, how's your day going?",
+        "Hi, chatbot!",
+        "Hello, are you there?",
+        "Hi, can I ask you something?",
+        "Hey, I need some help",
+        "Hi, can you help me with something?",
+        "Hello, I have a question",
+        "Hi, what do you do?",
+        "Hey, are you available?",
+        "Good afternoon",
+        "Hi, can you guide me?",
+        "Hello, let's chat"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! How can I assist you with your fitness goals today?",
+        "Hey! How can I help you achieve a healthier lifestyle?",
+        "Hi! What can I do for you today?",
+        "Good to see you again!",
+        "Hi there, how can I help?",
+        "Good morning, how can I help?",
+        "Good evening, how can I help?",
+        "Hello! What brings you here today?",
+        "Hi! How can I make your day better?",
+        "Hey there! What can I do for you?",
+        "Hi! Ready to start your fitness journey?",
+        "Hello! How can I assist you with your health goals?",
+        "Hi! Need help with anything specific?",
+        "Hey! Let's get started on your goals!",
+        "Hi! How can I support you today?",
+        "Hello! What can I do to make your day better?",
+        "Hi there! How can I assist you?",
+        "Hey! How can I help you stay healthy today?",
+        "Hi! What would you like to know about fitness or health?",
+        "Hello! Let's get started on your wellness journey!",
+        "Hi! It's great to see you taking steps toward your goals."
+      ]
     },
-        {
-            "tag": "fallback",
-            "patterns": [
-                "I'm not sure",
-                "I don't know",
-                "Can you repeat that?",
-                "Sorry, I didn't understand"
-            ],
-            "responses": [
-                "I'm sorry, I didn't understand. Can you please rephrase your question or request?",
-                "I'm sorry, I didn't catch that. Can you please provide more information or clarify your question?",
-                "I'm sorry, I'm not sure I understand. Can you please repeat your question or request?",
-                "I'm sorry, I'm not sure what you're asking. Can you please provide more context or information?"
-            ]
-        }
-    ]
-  }
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "See you soon",
+        "Take care",
+        "Catch you later",
+        "Talk to you soon",
+        "See you next time",
+        "Bye for now",
+        "Goodbye, have a nice day",
+        "Later!",
+        "I'm leaving now",
+        "See you around",
+        "Goodbye, take care",
+        "Bye, talk to you later",
+        "I'm done for now, bye",
+        "Thanks, goodbye",
+        "See you later, chatbot",
+        "Bye, have a great day",
+        "Goodbye, thanks for your help",
+        "Bye, stay healthy",
+        "Catch you next time",
+        "Take care and keep up the great work"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Keep up the good work!",
+        "Take care and have a great day!",
+        "See you soon! Stay committed to your goals!",
+        "Bye! Don't forget to stay active!",
+        "Goodbye! Keep working towards your goals!",
+        "Take care! See you next time!",
+        "Goodbye! Stay healthy and happy!",
+        "See you later! Keep up the great work!",
+        "Bye! Remember to stay positive and motivated!",
+        "Goodbye! Let me know if you need help again!",
+        "Take care! Keep striving for your goals!",
+        "See you next time! Stay consistent!",
+        "Goodbye! Keep making progress!",
+        "Bye! Stay focused and keep going!",
+        "Take care! Remember to hydrate and stretch!",
+        "Goodbye! Let’s chat again soon."
+      ]
+    },
+    {
+      "tag": "positive_feedback",
+      "patterns": [
+        "I like your answer.",
+        "This is helpful.",
+        "Good job!",
+        "You're doing great.",
+        "I appreciate your help.",
+        "That was a great answer!",
+        "Thanks for the detailed response.",
+        "This is exactly what I needed.",
+        "I love your response!",
+        "You're very helpful!",
+        "This is perfect, thank you!",
+        "This is a great explanation!",
+        "This is very helpful, thank you!",
+        "You're amazing!",
+        "I like how you explained that.",
+        "You’re very clear and helpful.",
+        "Thanks, this makes sense.",
+        "You’re awesome!"
+      ],
+      "responses": [
+        "Thank you! I'm glad I could help.",
+        "I'm happy to hear that! Let me know if there's anything else I can assist with.",
+        "Thanks for the kind words! I'm here to help whenever you need.",
+        "I appreciate your feedback! Let me know if you have more questions.",
+        "I'm glad you found my response helpful! Let me know if there's anything else I can do.",
+        "Thank you! Your feedback means a lot to me.",
+        "I'm happy to hear that my response was helpful!",
+        "Thanks for the compliment! Let me know if there's anything else I can assist with.",
+        "I'm glad I could provide the information you needed!",
+        "Thank you! I'm here to help you with anything else you need.",
+        "Your feedback inspires me to keep improving. Thanks!",
+        "I’m always happy to help. Let me know what else you’d like to know."
+      ]
+    },
+    {
+      "tag": "negative_feedback",
+      "patterns": [
+        "I don't think you're right.",
+        "I don't like your answer.",
+        "This doesn't make sense.",
+        "I think you're wrong.",
+        "Your response was not helpful.",
+        "I think you misunderstood me.",
+        "I think your answer is incorrect.",
+        "This is not what I was looking for.",
+        "I think you could improve your answer.",
+        "Your response is confusing.",
+        "I don't agree with your answer.",
+        "This is not clear to me.",
+        "I think you got it wrong.",
+        "This is not helpful at all.",
+        "I don't like how you explained that.",
+        "Can you explain that better?",
+        "I’m not satisfied with this response."
+      ],
+      "responses": [
+        "I'm sorry if my answer wasn't helpful. Can you clarify your question so I can assist you better?",
+        "Thank you for your feedback! I'll do my best to improve.",
+        "I apologize if I misunderstood. Can you explain your question again?",
+        "I'm sorry if my response was unclear. Let me try again.",
+        "Thank you for pointing that out. Let me try to clarify my response.",
+        "I appreciate your feedback. Let me know how I can improve my response.",
+        "I'm here to help! Please let me know if you'd like me to explain further.",
+        "I value your input. Let me try to address your question more accurately.",
+        "I'm sorry if I missed the point. Can you rephrase your question?",
+        "Thank you for your feedback! I'll make sure to address your concerns better next time.",
+        "I appreciate your patience. Let’s work on finding the answer together.",
+        "Thanks for letting me know. I’ll refine my response."
+      ]
+    },
+    {
+      "tag": "clarification_request",
+      "patterns": [
+        "Can you explain that again?",
+        "I didn't understand that.",
+        "What do you mean?",
+        "Can you clarify?",
+        "I need more details.",
+        "Can you explain it better?",
+        "I don't get it.",
+        "What does that mean?",
+        "Can you elaborate?",
+        "I need more information.",
+        "Can you simplify that?",
+        "I don't understand your response.",
+        "Can you explain in simpler terms?",
+        "What are you trying to say?",
+        "Can you make that clearer?"
+      ],
+      "responses": [
+        "Sure! Let me explain that in more detail.",
+        "I apologize if my response was unclear. Here's a simpler explanation.",
+        "Let me clarify that for you. Here's what I meant:",
+        "I understand that might be confusing. Let me try again.",
+        "Here's a more detailed explanation: [Insert explanation].",
+        "Let me break it down for you: [Insert simplified explanation].",
+        "I can explain that better. Here's what I mean:",
+        "Thanks for asking for clarification! Here's a clearer explanation:",
+        "Let me rephrase that for you: [Insert rephrased explanation].",
+        "I appreciate your patience. Here's a better explanation.",
+        "Thank you for pointing that out. Let me simplify it for better understanding.",
+        "Let’s walk through this step by step. Here’s what I mean."
+      ]
+    },
+    {
+      "tag": "diet_tips",
+      "patterns": [
+        "What are some tips for a healthy diet?",
+        "How can I eat healthier?",
+        "What should I include in my diet?",
+        "What are the best foods for weight loss?",
+        "How do I plan a healthy diet?",
+        "What are some good meal prep ideas?",
+        "What should I avoid eating?",
+        "How do I balance my meals?",
+        "What are some high-protein foods?",
+        "What are the best foods for muscle gain?",
+        "How do I reduce sugar in my diet?",
+        "What are some healthy breakfast ideas?",
+        "What are the best snacks for weight loss?",
+        "How do I eat healthy on a budget?",
+        "What are some tips for portion control?"
+      ],
+      "responses": [
+        "A healthy diet includes a balance of lean proteins, whole grains, healthy fats, and plenty of fruits and vegetables. Avoid processed foods and sugary drinks.",
+        "To eat healthier, focus on whole, unprocessed foods. Include lean proteins, healthy fats, and complex carbohydrates in your meals.",
+        "For weight loss, focus on foods that are high in fiber and protein, like vegetables, lean meats, and legumes. Avoid high-calorie processed foods.",
+        "Meal prep can help you stay on track. Plan your meals for the week, cook in bulk, and store portions in containers for easy access.",
+        "To balance your meals, aim for half your plate to be vegetables, a quarter lean protein, and a quarter whole grains or healthy carbs.",
+        "High-protein foods include chicken, fish, eggs, tofu, beans, lentils, and Greek yogurt. These are great for muscle gain and weight loss.",
+        "To reduce sugar, avoid sugary drinks, desserts, and processed snacks. Opt for natural sweeteners like fruits instead.",
+        "Healthy breakfast ideas include oatmeal with fruit, eggs with whole-grain toast, or a smoothie with spinach, banana, and protein powder.",
+        "For snacks, try nuts, seeds, Greek yogurt, or sliced vegetables with hummus. These are low-calorie and nutrient-dense options.",
+        "Eating healthy on a budget is possible by buying in bulk, choosing seasonal produce, and cooking at home instead of eating out.",
+        "Portion control is key to a balanced diet. Use smaller plates and listen to your hunger cues to avoid overeating."
+      ]
+    },
+    {
+      "tag": "healthy_snacks",
+      "patterns": [
+        "What are some healthy snack ideas?",
+        "Can you suggest snacks that are good for me?",
+        "What should I snack on for weight loss?",
+        "Are there any snacks good for energy?",
+        "What are healthy snacks for work?",
+        "What are low-calorie snack options?",
+        "Can I eat snacks while dieting?",
+        "What are some protein-packed snacks?",
+        "What are quick and easy healthy snacks?",
+        "What are some filling snacks?"
+      ],
+      "responses": [
+        "Healthy snacks include nuts, seeds, Greek yogurt, fresh fruits, and vegetables with hummus.",
+        "Try energy-boosting snacks like a banana with peanut butter or a handful of mixed nuts.",
+        "For weight loss, focus on low-calorie, high-protein snacks like hard-boiled eggs or cottage cheese.",
+        "At work, pack convenient options like string cheese, raw almonds, or pre-cut veggies.",
+        "Protein-packed snacks include boiled eggs, protein bars, or a small serving of edamame.",
+        "Quick snacks can be an apple with almond butter, whole-grain crackers with cheese, or plain popcorn."
+      ]
+    },
+    {
+      "tag": "hydration_tips",
+      "patterns": [
+        "How much water should I drink daily?",
+        "Why is hydration important?",
+        "What are the benefits of drinking water?",
+        "How can I stay hydrated during workouts?",
+        "What should I drink besides water?",
+        "Can I drink coffee and still stay hydrated?",
+        "How do I know if I’m dehydrated?",
+        "What are signs of dehydration?",
+        "Should I drink water before, during, or after exercise?",
+        "How can I increase my water intake?"
+      ],
+      "responses": [
+        "It's recommended to drink at least 8 cups (about 2 liters) of water daily, but this varies based on activity level and climate.",
+        "Staying hydrated helps regulate body temperature, maintain energy levels, and improve cognitive function.",
+        "Drink water regularly throughout the day, especially before, during, and after workouts.",
+        "You can also stay hydrated with beverages like herbal teas, milk, and low-sugar electrolyte drinks.",
+        "Dehydration signs include dark urine, dry mouth, fatigue, and dizziness. Drink water when you feel thirsty.",
+        "Increase water intake by carrying a water bottle, setting reminders, or adding fruit slices for flavor."
+      ]
+    },
+    {
+      "tag": "post_workout_recovery",
+      "patterns": [
+        "What should I do after a workout?",
+        "How can I recover from exercise?",
+        "What are the best post-workout recovery tips?",
+        "Should I stretch after exercising?",
+        "What is the best thing to eat after a workout?",
+        "How important is rest after a workout?",
+        "How can I prevent soreness after exercising?",
+        "What are good recovery exercises?",
+        "What should I avoid after a workout?",
+        "How do I cool down properly?"
+      ],
+      "responses": [
+        "After a workout, focus on cooling down with light stretches to improve flexibility and prevent stiffness.",
+        "Consume a balanced meal or snack with protein and carbs within 30-60 minutes to aid recovery.",
+        "Stay hydrated by drinking water or an electrolyte-rich beverage.",
+        "Rest and sleep are crucial for muscle recovery and overall performance improvement.",
+        "Avoid sitting or lying down immediately after intense exercise; stay active with light movements to cool down."
+      ]
+    },
+    {
+      "tag": "weight_loss_tips",
+      "patterns": [
+        "What are the best ways to lose weight?",
+        "How can I lose weight fast?",
+        "What foods should I avoid to lose weight?",
+        "How much exercise do I need to lose weight?",
+        "What are the best workouts for fat loss?",
+        "How can I track my weight loss progress?",
+        "What should I eat for weight loss?",
+        "What are common mistakes people make when losing weight?",
+        "Can I lose weight without exercise?",
+        "How do I stay motivated to lose weight?"
+      ],
+      "responses": [
+        "To lose weight, create a calorie deficit by eating fewer calories and increasing physical activity.",
+        "Focus on nutrient-dense foods like vegetables, lean proteins, and whole grains while avoiding processed foods.",
+        "Aim for at least 150 minutes of moderate-intensity exercise per week, including cardio and strength training.",
+        "Track your progress by weighing yourself weekly and taking body measurements or photos.",
+        "Stay consistent and avoid crash diets, as sustainable habits lead to long-term results."
+      ]
+    },
+    {
+      "tag": "muscle_building",
+      "patterns": [
+        "How can I build muscle?",
+        "What are the best exercises for building muscle?",
+        "How much protein do I need to build muscle?",
+        "What is the best workout split for muscle gain?",
+        "Should I lift heavy weights to build muscle?",
+        "How often should I train each muscle group?",
+        "What are good foods for muscle growth?",
+        "How long does it take to build muscle?",
+        "What are common mistakes when trying to gain muscle?",
+        "Can I build muscle at home?"
+      ],
+      "responses": [
+        "To build muscle, focus on progressive overload by gradually increasing weights or resistance in your workouts.",
+        "Incorporate compound exercises like squats, deadlifts, and bench presses to target multiple muscle groups.",
+        "Consume 1.2-2.0 grams of protein per kilogram of body weight daily to support muscle growth.",
+        "Train each muscle group 2-3 times per week and allow adequate rest for recovery.",
+        "Consistency and a balanced diet rich in protein, carbs, and healthy fats are key to muscle-building success."
+      ]
+    },
+    {
+      "tag": "cardio_fitness",
+      "patterns": [
+        "What are the best cardio exercises?",
+        "How does cardio improve health?",
+        "How long should I do cardio for?",
+        "Can I do cardio every day?",
+        "What is better, running or cycling?",
+        "What are some low-impact cardio options?",
+        "How can I make cardio more interesting?",
+        "What is HIIT cardio?",
+        "What are the benefits of swimming for fitness?",
+        "How do I increase my cardio endurance?"
+      ],
+      "responses": [
+        "Popular cardio exercises include running, cycling, swimming, and jumping rope.",
+        "Cardio improves heart health, burns calories, and boosts endurance and stamina.",
+        "Aim for at least 150 minutes of moderate-intensity or 75 minutes of vigorous-intensity cardio weekly.",
+        "Low-impact cardio options include walking, swimming, and using an elliptical machine.",
+        "HIIT (High-Intensity Interval Training) involves alternating between short bursts of intense activity and rest for a quick, effective workout."
+      ]
+    },
+    {
+      "tag": "mental_health_tips",
+      "patterns": [
+        "How can I improve my mental health?",
+        "What are some self-care activities?",
+        "Can exercise reduce stress?",
+        "What are mindfulness practices?",
+        "How do I stay positive?",
+        "How can I manage anxiety?",
+        "What are relaxation techniques?",
+        "How does sleep affect mental health?",
+        "What are the benefits of journaling?",
+        "How do I create a self-care routine?"
+      ],
+      "responses": [
+        "Exercise is a great way to reduce stress and improve mental health by releasing endorphins.",
+        "Self-care activities include reading, meditating, taking a walk, or engaging in a hobby you enjoy.",
+        "Practice mindfulness by focusing on the present moment through deep breathing or meditation.",
+        "Getting 7-9 hours of sleep per night is crucial for maintaining good mental health.",
+        "Journaling can help you process emotions and track personal growth. Start with writing about your day or goals."
+      ]
+    },
+    {
+      "tag": "bot_name",
+      "patterns": [
+        "What's your name?",
+        "What do I call you?",
+        "Can you tell me your name?",
+        "Who are you?",
+        "Do you have a name?",
+        "What should I refer to you as?",
+        "Hi, what's your name?",
+        "Hello, who am I talking to?",
+        "Are you a bot? What's your name?"
+      ],
+      "responses": [
+        "My name is HealthChatBot. How can I assist you today?",
+        "I'm HealthChatBot, your personal AI fitness assistant.",
+        "You can call me HealthChatBot, here to help you with your health and fitness goals.",
+        "I'm HealthChatBot, designed to provide personalized workout and diet plans for you."
+      ]
+    },
+    {
+      "tag": "bot_job",
+      "patterns": [
+        "What do you do?",
+        "What is your job?",
+        "What is your mission?",
+        "How can I use you?",
+        "How can you help me?",
+        "What are your features?",
+        "What tasks can you perform?",
+        "What kind of help can I get from you?",
+        "What is your purpose?",
+        "Can you explain your role?"
+      ],
+      "responses": [
+        "My job is to help you achieve your fitness goals by providing personalized workout plans, nutrition advice, and motivation.",
+        "My mission is to make fitness accessible and enjoyable for everyone!",
+        "You can use me by asking for workout recommendations, tracking your progress, or getting tips on healthy eating.",
+        "I help people create diet and exercise plans to achieve their weight loss or weight gain goals based on your BMI and fitness level.",
+        "I can provide personalized fitness guidance, answer questions about workouts, and support your health journey."
+      ]
+    },
+    {
+      "tag": "bot_creators",
+      "patterns": [
+        "Who made you?",
+        "Who created you?",
+        "Who developed you?",
+        "Who built you?",
+        "Who designed you?",
+        "Who programmed you?"
+      ],
+      "responses": [
+        "I was created by Jilei Sun, Yu Liang, and Qin Qin. This HealthChatBot is an NLP project from CS 6320 at the University of Texas at Dallas.",
+        "My creators are Jilei Sun, Yu Liang, and Qin Qin. This HealthChatBot is part of an NLP project for CS 6320 at the University of Texas at Dallas.",
+        "This HealthChatBot was developed by Jilei Sun, Yu Liang, and Qin Qin as an NLP project for CS 6320 at the University of Texas at Dallas.",
+        "I was built by Jilei Sun, Yu Liang, and Qin Qin. This chatbot is an NLP project for CS 6320 at the University of Texas at Dallas.",
+        "My designers are Jilei Sun, Yu Liang, and Qin Qin. This HealthChatBot is an NLP project from CS 6320 at the University of Texas at Dallas."
+      ]
+    },
+    {
+      "tag": "calculate_bmi",
+      "patterns": [
+        "What is my BMI?",
+        "Can you calculate my BMI?",
+        "How do I calculate my BMI?",
+        "What does BMI mean?",
+        "How is BMI calculated?",
+        "Can you explain BMI to me?",
+        "What is the formula for BMI?",
+        "How do I know if my BMI is healthy?",
+        "Is my BMI too high?",
+        "Can you tell me if my BMI is normal?"
+      ],
+      "responses": [
+        "Sure, I can help you calculate your BMI. Please enter your weight (in kilograms), height (in meters), and age (in years).",
+        "BMI, or Body Mass Index, is calculated using your weight in kilograms and height in meters. Please enter your weight, height, and age in this format: weight (in kilograms), height (in meters), and age (in years).",
+        "To calculate your BMI, I'll need your weight (in kilograms), height (in meters), and age (in years). Please provide this information.",
+        "The formula for BMI is weight (kg) divided by height (m) squared. To proceed, please enter your weight (in kilograms), height (in meters), and age (in years).",
+        "Let me calculate your BMI! Enter your details in this format: weight (in kilograms), height (in meters), and age (in years)."
+      ]
+    },
+    {
+      "tag": "exercise_frequency",
+      "patterns": [
+        "How often should I exercise?",
+        "What is the ideal exercise frequency?",
+        "How many days a week should I work out?",
+        "Can I exercise every day?",
+        "How often should I do cardio?",
+        "How many rest days should I take?",
+        "Should I work out daily?",
+        "What is the best workout schedule?",
+        "How often should I do strength training?",
+        "How many times a week should I go to the gym?"
+      ],
+      "responses": [
+        "For general fitness, aim to exercise at least 3-5 days a week with a mix of cardio and strength training.",
+        "It's recommended to have at least 150 minutes of moderate-intensity exercise per week or 75 minutes of vigorous-intensity exercise.",
+        "Strength training should be done 2-3 times a week with rest days in between for muscle recovery.",
+        "Daily exercise is fine if you balance intensity and allow different muscle groups to recover.",
+        "For beginners, start with 2-3 days a week and gradually increase as you build endurance."
+      ]
+    },
+    {
+      "tag": "healthy_lifestyle",
+      "patterns": [
+        "What are some healthy foods?",
+        "Can you suggest some healthy drinks?",
+        "What foods should I avoid?",
+        "How can I maintain a healthy lifestyle?",
+        "What are some tips for living a healthy life?",
+        "What are the best habits for staying healthy?",
+        "How do I start living a healthy lifestyle?",
+        "What are some healthy snacks?",
+        "What should I eat to stay healthy?",
+        "How do I balance my diet and exercise?"
+      ],
+      "responses": [
+        "To maintain a healthy lifestyle, focus on eating a balanced diet with whole, unprocessed foods like fruits, vegetables, lean proteins, and whole grains.",
+        "Healthy drinks include water, herbal teas, and low-sugar beverages. Avoid sugary drinks and sodas.",
+        "Start small by incorporating regular physical activity, drinking more water, and reducing processed foods.",
+        "For healthy snacks, try nuts, seeds, Greek yogurt, or fresh fruits and vegetables.",
+        "Balance diet and exercise by tracking your calorie intake and ensuring you're meeting your nutritional needs while staying active."
+      ]
+    },
+    {
+      "tag": "workout_routines",
+      "patterns": [
+        "What is a good workout routine?",
+        "Can you suggest a workout plan?",
+        "How do I create a workout schedule?",
+        "What is the best exercise plan for beginners?",
+        "What are some advanced workout plans?",
+        "How should I divide my workouts?",
+        "What is the best home workout routine?",
+        "Can you recommend gym exercises?",
+        "What are the best exercises for weight loss?",
+        "How do I target specific muscle groups in my workouts?"
+      ],
+      "responses": [
+        "For beginners, start with 2-3 days of full-body workouts, including squats, push-ups, and planks.",
+        "Advanced routines may include workout splits like chest/triceps, back/biceps, and legs/shoulders on different days.",
+        "Home workouts can include bodyweight exercises like lunges, planks, and burpees, paired with resistance bands if available.",
+        "At the gym, focus on a mix of cardio (like treadmill or cycling) and strength training using weights or machines.",
+        "To lose weight, incorporate High-Intensity Interval Training (HIIT) along with a balanced diet."
+      ]
+    },
+    {
+      "tag": "personalized_workout_plan",
+      "patterns": [
+        "Can you create a workout plan for me?",
+        "I need a personalized workout plan.",
+        "Can you suggest a workout routine?",
+        "I want a workout plan tailored to me.",
+        "Can you help me with a fitness plan?",
+        "I need a custom workout plan.",
+        "Can you make a workout plan for me?",
+        "I want a workout plan based on my fitness level.",
+        "Can you design a workout plan for me?",
+        "I need a workout plan for weight loss.",
+        "Can you create a workout plan for muscle gain?",
+        "I want a workout plan for beginners.",
+        "Can you make a workout plan for advanced fitness?",
+        "I need a workout plan for strength training.",
+        "Can you create a workout plan for flexibility?",
+        "I want a workout plan for cardio.",
+        "Can you make a workout plan for fat loss?",
+        "I need a workout plan for home workouts.",
+        "Can you create a workout plan for the gym?",
+        "I want a workout plan for building endurance.",
+        "Can you make a workout plan for toning muscles?",
+        "I need a workout plan for improving stamina."
+      ],
+      "responses": [
+        "Sure! Please tell me your fitness level (beginner, intermediate, advanced) so I can create a personalized workout plan for you.",
+        "I'd be happy to help! Let me know your fitness goals (e.g., weight loss, muscle gain, endurance) to create a tailored workout plan.",
+        "Absolutely! Please provide your fitness level and goals, and I'll design a workout plan just for you.",
+        "I can create a personalized workout plan for you. Let me know if you're looking for cardio, strength training, or flexibility exercises.",
+        "Let's get started! Tell me your fitness level and goals, and I'll create a workout plan that suits you."
+      ]
+    },
+    {
+      "tag": "personalized_diet_plan",
+      "patterns": [
+        "Can you create a diet plan for me?",
+        "I need a personalized diet plan.",
+        "Can you suggest a meal plan?",
+        "I want a diet plan tailored to me.",
+        "Can you help me with a nutrition plan?",
+        "I need a custom diet plan.",
+        "Can you make a diet plan for me?",
+        "I want a diet plan based on my fitness goals.",
+        "Can you design a diet plan for me?",
+        "I need a diet plan for weight loss.",
+        "Can you create a diet plan for muscle gain?",
+        "I want a diet plan for healthy eating.",
+        "Can you create a diet plan for balanced nutrition?",
+        "I need a diet plan for vegetarians.",
+        "Can you make a diet plan for someone with food allergies?",
+        "I need a diet plan for someone who is vegan.",
+        "Can you create a diet plan for someone who wants to gain weight?",
+        "I want a diet plan for someone who wants to lose belly fat.",
+        "Can you make a diet plan for someone who has a busy schedule?"
+      ],
+      "responses": [
+        "Sure! Please tell me your fitness goals (e.g., weight loss, muscle gain, energy boost) so I can create a personalized diet plan for you.",
+        "I'd be happy to help! Let me know your dietary preferences (e.g., vegetarian, keto, low-carb) to create a tailored diet plan.",
+        "Absolutely! Please provide your fitness goals and dietary restrictions, and I'll design a diet plan just for you.",
+        "I can create a personalized diet plan for you. Let me know if you're looking for weight loss, muscle gain, or balanced nutrition.",
+        "Let's get started! Tell me your fitness goals and dietary preferences, and I'll create a diet plan that suits you."
+      ]
+    },
+    {
+      "tag": "injury_recovery",
+      "patterns": [
+        "How do I recover from an injury?",
+        "What should I do if I get injured while exercising?",
+        "How can I prevent re-injury?",
+        "What are some exercises for recovery?",
+        "How long should I rest after an injury?",
+        "Can I still exercise with an injury?",
+        "What are the best ways to speed up recovery?",
+        "What should I eat for injury recovery?",
+        "How can I safely return to exercise after an injury?",
+        "What should I avoid when recovering from an injury?"
+      ],
+      "responses": [
+        "If you're injured, prioritize rest and consult a healthcare professional before resuming exercise.",
+        "To recover from an injury, focus on low-impact activities like walking or swimming, and gradually increase intensity as you heal.",
+        "Eat a diet rich in protein, vitamins, and minerals to support healing and recovery.",
+        "Use proper technique and avoid overexertion to prevent re-injury.",
+        "Always listen to your body and take breaks if you feel pain or discomfort during recovery."
+      ]
+    },
+    {
+      "tag": "fitness_motivation",
+      "patterns": [
+        "How can I stay motivated to exercise?",
+        "What are some tips for staying consistent?",
+        "How do I overcome laziness?",
+        "What motivates people to work out?",
+        "Why should I stick to my fitness goals?",
+        "How do I create a fitness habit?",
+        "What is the best way to stay on track?",
+        "How do I push through tough workouts?",
+        "What are some motivational quotes for fitness?",
+        "How do I find workout inspiration?"
+      ],
+      "responses": [
+        "Set specific, achievable goals and track your progress to stay motivated.",
+        "Find a workout buddy or join a group to make exercise more enjoyable and accountable.",
+        "Focus on how great you feel after working out to push through tough days.",
+        "Remember your 'why'—why you started this fitness journey and what you want to achieve.",
+        "Celebrate small milestones to build momentum and stay motivated over time."
+      ]
+    },
+    {
+      "tag": "flexibility_training",
+      "patterns": [
+        "What are the best exercises for flexibility?",
+        "How can I improve my flexibility?",
+        "Should I stretch before or after exercise?",
+        "What are the benefits of stretching?",
+        "Can yoga help with flexibility?",
+        "How often should I do flexibility exercises?",
+        "What are dynamic stretches?",
+        "What are static stretches?",
+        "How do I prevent stiffness after workouts?",
+        "What is a good stretching routine?"
+      ],
+      "responses": [
+        "To improve flexibility, incorporate dynamic stretches before workouts and static stretches afterward.",
+        "Yoga is an excellent way to improve flexibility and balance while reducing stress.",
+        "Aim to stretch at least 2-3 times a week, focusing on all major muscle groups.",
+        "Dynamic stretches, like leg swings, are great for warming up, while static stretches, like hamstring stretches, are better for cooling down.",
+        "Prevent stiffness by staying active, hydrating well, and incorporating regular stretching into your routine."
+      ]
+    },
+    {
+      "tag": "stress_management",
+      "patterns": [
+        "How do I manage stress?",
+        "What are some tips for reducing stress?",
+        "How can I relax after a long day?",
+        "What are the best ways to deal with anxiety?",
+        "How do I stay calm under pressure?",
+        "What are some relaxation techniques?",
+        "How can I improve my mental health?",
+        "What are some ways to reduce stress at work?",
+        "How do I balance work and personal life?",
+        "What are some tips for staying positive?"
+      ],
+      "responses": [
+        "To manage stress, try deep breathing exercises, meditation, or yoga. Regular physical activity and a healthy diet can also help.",
+        "Relaxation techniques like progressive muscle relaxation, mindfulness, and deep breathing can reduce stress and improve mental health.",
+        "To stay calm under pressure, focus on what you can control, take deep breaths, and break tasks into smaller steps.",
+        "For anxiety, try grounding techniques like the 5-4-3-2-1 method: identify 5 things you see, 4 you can touch, 3 you hear, 2 you smell, and 1 you taste.",
+        "To reduce stress at work, take short breaks, prioritize tasks, and practice time management. Don't hesitate to ask for help if needed."
+      ]
+    },
+    {
+      "tag": "meal_planning",
+      "patterns": [
+        "How do I plan my meals?",
+        "What is the best way to meal prep?",
+        "How can I organize my weekly meals?",
+        "What are some easy meal prep ideas?",
+        "How do I create a balanced meal plan?",
+        "What foods should I include in meal planning?",
+        "Can you help me plan meals for weight loss?",
+        "What are some tips for meal prepping on a budget?",
+        "How do I save time with meal planning?",
+        "What are some healthy recipes for meal prep?"
+      ],
+      "responses": [
+        "Start meal planning by deciding your meals for the week and preparing ingredients in advance.",
+        "Include a balance of protein, healthy fats, and complex carbs in your meal plan for optimal nutrition.",
+        "Use containers to portion meals and store them in the fridge or freezer for easy access.",
+        "To save time, cook in bulk and reuse ingredients in different meals throughout the week.",
+        "For budget-friendly meal prep, focus on seasonal produce, frozen vegetables, and bulk grains like rice or quinoa."
+      ]
+    },
+    {
+      "tag": "weight_maintenance",
+      "patterns": [
+        "How do I maintain my weight?",
+        "What are tips for keeping my weight stable?",
+        "How do I avoid weight gain?",
+        "What should I eat to maintain my weight?",
+        "Can I maintain weight without tracking calories?",
+        "How do I balance exercise and eating for weight maintenance?",
+        "What are the challenges of maintaining weight?",
+        "How do I adjust my diet for weight maintenance?",
+        "Is meal timing important for maintaining weight?",
+        "What are some healthy habits for long-term weight stability?"
+      ],
+      "responses": [
+        "To maintain weight, focus on a balanced diet with consistent portion sizes and regular physical activity.",
+        "Avoid overeating by listening to your hunger cues and practicing mindful eating.",
+        "Staying active, even with light exercise like walking, can help maintain a stable weight.",
+        "Keep track of your progress by monitoring your weight weekly or biweekly without obsessing over daily fluctuations.",
+        "Meal timing can help; aim for regular meals and snacks to avoid overindulging later in the day."
+      ]
+    },
+    {
+      "tag": "gym_etiquette",
+      "patterns": [
+        "What is proper gym etiquette?",
+        "How do I behave at the gym?",
+        "What are the dos and don'ts of gym behavior?",
+        "How do I share gym equipment?",
+        "What should I do after using gym equipment?",
+        "Is it okay to use my phone at the gym?",
+        "How do I avoid being disruptive at the gym?",
+        "What should I wear to the gym?",
+        "What are the rules for cleaning equipment at the gym?",
+        "How do I interact with others at the gym?"
+      ],
+      "responses": [
+        "Always wipe down equipment after use and return it to its designated place.",
+        "Share equipment by allowing others to 'work in' during rest periods if asked politely.",
+        "Keep phone use to a minimum, especially if it delays your workout or distracts others.",
+        "Wear comfortable, appropriate clothing and shoes suitable for exercise.",
+        "Be mindful of noise levels and avoid dropping weights loudly unless necessary for safety."
+      ]
+    },
+    {
+      "tag": "exercise_variation",
+      "patterns": [
+        "Why should I vary my exercises?",
+        "What are the benefits of mixing up workouts?",
+        "How often should I change my routine?",
+        "What happens if I do the same workout every day?",
+        "How can I avoid workout boredom?",
+        "What are some ideas for new exercises?",
+        "Can I combine different types of workouts?",
+        "How do I incorporate variety into my fitness plan?",
+        "What are the benefits of cross-training?",
+        "How do I know when to switch up my exercises?"
+      ],
+      "responses": [
+        "Varying exercises prevents plateaus, keeps workouts interesting, and challenges different muscle groups.",
+        "Change your routine every 4-6 weeks to maintain progress and avoid overuse injuries.",
+        "Combine strength training, cardio, and flexibility exercises for a well-rounded fitness plan.",
+        "Explore new activities like yoga, swimming, or hiking to stay engaged and motivated.",
+        "Cross-training improves overall fitness by targeting different aspects of strength, endurance, and flexibility."
+      ]
+    },
+    {
+      "tag": "equipment_selection",
+      "patterns": [
+        "What equipment do I need for a home gym?",
+        "What is the best equipment for beginners?",
+        "Should I use machines or free weights?",
+        "What are the benefits of resistance bands?",
+        "How do I choose the right weights?",
+        "What is the best cardio equipment?",
+        "Do I need a treadmill or a stationary bike?",
+        "What is better, kettlebells or dumbbells?",
+        "How do I select gym equipment based on my goals?",
+        "What equipment is best for small spaces?"
+      ],
+      "responses": [
+        "For a home gym, start with basics like resistance bands, a yoga mat, and a set of dumbbells.",
+        "Beginners may find machines easier to use since they guide proper movement and reduce injury risk.",
+        "Free weights, like dumbbells or kettlebells, allow for greater range of motion and functional strength training.",
+        "Resistance bands are affordable, versatile, and great for both strength training and stretching.",
+        "For small spaces, consider foldable equipment like a compact treadmill or adjustable dumbbells."
+      ]
+    },
+    {
+      "tag": "home_workouts",
+      "patterns": [
+        "What are some good home workouts?",
+        "How can I exercise at home?",
+        "Can I stay fit without going to the gym?",
+        "What equipment do I need for home workouts?",
+        "What are the best bodyweight exercises?",
+        "Can I do strength training at home?",
+        "How do I start working out at home?",
+        "What are some cardio exercises I can do at home?",
+        "Can I lose weight with home workouts?",
+        "What are easy workouts for small spaces?"
+      ],
+      "responses": [
+        "Home workouts can include bodyweight exercises like squats, push-ups, and planks.",
+        "Cardio options at home include jumping jacks, high knees, and burpees.",
+        "You don't need much equipment—resistance bands, a yoga mat, and dumbbells are great for home workouts.",
+        "Strength training at home is effective with exercises like lunges, push-ups, and resistance band workouts.",
+        "Create a routine that includes a mix of cardio, strength, and flexibility exercises for a full-body workout."
+      ]
+    },
+    {
+      "tag": "nutrition_basics",
+      "patterns": [
+        "What are the basics of good nutrition?",
+        "How do I create a balanced diet?",
+        "What is the importance of macronutrients?",
+        "What are micronutrients?",
+        "What are healthy fats?",
+        "How much protein should I eat?",
+        "What is the role of carbohydrates in a diet?",
+        "What are good sources of vitamins and minerals?",
+        "How can I eat a nutrient-dense diet?",
+        "What are the fundamentals of healthy eating?"
+      ],
+      "responses": [
+        "Good nutrition starts with a balance of macronutrients: carbohydrates, proteins, and healthy fats.",
+        "Micronutrients like vitamins and minerals are essential for overall health and should come from whole foods like fruits and vegetables.",
+        "Healthy fats, found in nuts, seeds, and avocados, support brain function and hormone production.",
+        "Aim for lean protein sources such as chicken, fish, tofu, and legumes to support muscle repair and growth.",
+        "Carbohydrates provide energy; focus on complex carbs like whole grains and vegetables for sustained energy levels."
+      ]
+    },
+    {
+      "tag": "fitness_for_beginners",
+      "patterns": [
+        "How do I start my fitness journey?",
+        "What are the best workouts for beginners?",
+        "How do I set fitness goals as a beginner?",
+        "What should I avoid as a beginner?",
+        "What equipment is best for fitness beginners?",
+        "How do I create a simple workout plan?",
+        "What is the easiest way to get fit?",
+        "Should I focus on cardio or strength first?",
+        "What are some tips for fitness beginners?",
+        "How do I stay consistent as a beginner?"
+      ],
+      "responses": [
+        "Start with 2-3 days of light to moderate exercise per week and gradually increase intensity as you build endurance.",
+        "Focus on basic bodyweight exercises like squats, push-ups, and planks to build foundational strength.",
+        "Set realistic and specific fitness goals, such as walking 10,000 steps a day or doing 20 minutes of yoga.",
+        "As a beginner, avoid overexertion and always prioritize proper form to prevent injury.",
+        "Combine cardio and strength training for a balanced approach, starting with low-impact activities like walking or cycling."
+      ]
+    },
+    {
+      "tag": "fitness_plateaus",
+      "patterns": [
+        "What is a fitness plateau?",
+        "How do I overcome a fitness plateau?",
+        "Why am I not seeing progress in my workouts?",
+        "What are signs of a fitness plateau?",
+        "How do I break through a weight loss plateau?",
+        "Why am I not gaining muscle anymore?",
+        "What changes should I make if I hit a plateau?",
+        "How do I stay motivated during a fitness plateau?",
+        "Can switching exercises help with plateaus?",
+        "What are strategies to overcome plateaus?"
+      ],
+      "responses": [
+        "Fitness plateaus are normal; they occur when your body adapts to your current routine. Changing your exercises can help.",
+        "To break through a plateau, try increasing intensity, changing your workout type, or adding new exercises.",
+        "For weight loss plateaus, reassess your diet and ensure you're maintaining a calorie deficit.",
+        "Staying consistent and motivated is key. Celebrate small wins and remember that progress takes time.",
+        "Plateaus in muscle gain can often be overcome by adjusting your training volume or increasing the weights you use."
+      ]
+    },
+    {
+      "tag": "calorie_tracking",
+      "patterns": [
+        "How do I track my calories?",
+        "What are the best apps for calorie tracking?",
+        "Is calorie counting necessary?",
+        "How do I calculate my daily calorie needs?",
+        "What is a calorie deficit?",
+        "How do I balance calorie intake and exercise?",
+        "What are some tips for accurate calorie tracking?",
+        "Can I track calories without an app?",
+        "How do I estimate calories in home-cooked meals?",
+        "What is the difference between calories in and calories out?"
+      ],
+      "responses": [
+        "To track calories, use apps like MyFitnessPal or Cronometer to log your meals and monitor your intake.",
+        "A calorie deficit means consuming fewer calories than you burn, which is essential for weight loss.",
+        "Calculate your daily calorie needs using an online Total Daily Energy Expenditure (TDEE) calculator.",
+        "For accurate calorie tracking, weigh and measure your food using a kitchen scale and measuring cups.",
+        "If you prefer not to use an app, keep a food journal and write down estimated portions and calorie counts."
+      ]
+    },
+    {
+      "tag": "active_lifestyle",
+      "patterns": [
+        "How do I stay active during the day?",
+        "What are tips for increasing daily activity?",
+        "How can I be more active at work?",
+        "What are ways to avoid sitting too much?",
+        "How do I add more movement to my routine?",
+        "What are good activities for an active lifestyle?",
+        "Can I stay active without formal workouts?",
+        "How do I track daily steps?",
+        "What are simple ways to stay active?",
+        "How do I make movement a habit?"
+      ],
+      "responses": [
+        "Take short walks during breaks, use the stairs instead of elevators, and do light stretches while watching TV.",
+        "Set a goal to walk 10,000 steps a day and use a pedometer or fitness tracker to monitor your progress.",
+        "At work, stand up and stretch every hour, and consider using a standing desk if possible.",
+        "Incorporate fun activities like dancing, playing with pets, or gardening to stay active outside of workouts.",
+        "Build movement into your day by parking farther away, taking walking meetings, or doing household chores with extra energy."
+      ]
+    },
+    {
+      "tag": "recovery_tips",
+      "patterns": [
+        "What are the best tips for workout recovery?",
+        "How do I recover faster after a workout?",
+        "What should I eat for muscle recovery?",
+        "How much rest do I need between workouts?",
+        "What are the benefits of active recovery?",
+        "How do I reduce muscle soreness?",
+        "What is the role of sleep in recovery?",
+        "What is foam rolling, and should I use it?",
+        "Can stretching help with recovery?",
+        "What are signs of overtraining?"
+      ],
+      "responses": [
+        "Prioritize sleep, as it is crucial for muscle recovery and overall performance improvement.",
+        "Active recovery, like light walking or yoga, helps reduce soreness and improve circulation.",
+        "Stay hydrated and consume a post-workout meal with protein and carbs to support recovery.",
+        "Foam rolling can relieve muscle tightness and improve flexibility. Use it after workouts or on rest days.",
+        "Listen to your body and take rest days when you feel overly fatigued or sore to avoid overtraining."
+      ]
+    },
+    {
+      "tag": "strength_training",
+      "patterns": [
+        "What are the best strength training exercises?",
+        "How do I start strength training?",
+        "What are the benefits of lifting weights?",
+        "Should I use free weights or machines?",
+        "How do I increase my strength?",
+        "What is the best way to build muscle strength?",
+        "How often should I do strength training?",
+        "What is progressive overload in strength training?",
+        "Can I do strength training at home?",
+        "How do I avoid injury while lifting weights?"
+      ],
+      "responses": [
+        "Strength training exercises include squats, deadlifts, bench presses, pull-ups, and rows.",
+        "Start with light weights or bodyweight exercises to focus on form and gradually increase intensity.",
+        "Free weights are versatile and engage stabilizing muscles, while machines are great for beginners and specific movements.",
+        "Progressive overload involves gradually increasing the weight, reps, or sets to build strength over time.",
+        "Avoid injuries by warming up, using proper form, and not rushing to lift heavy weights too quickly."
+      ]
+    },
+    {
+      "tag": "cardio_vs_strength",
+      "patterns": [
+        "What is better, cardio or strength training?",
+        "Should I do cardio or weights first?",
+        "What are the differences between cardio and strength training?",
+        "Can I combine cardio and strength workouts?",
+        "What are the benefits of strength training over cardio?",
+        "Is cardio better for weight loss?",
+        "Should I prioritize cardio or weights?",
+        "How do I balance cardio and strength training?",
+        "What burns more calories, cardio or strength training?",
+        "Can I do cardio and strength on the same day?"
+      ],
+      "responses": [
+        "Cardio is great for heart health and burning calories, while strength training builds muscle and boosts metabolism.",
+        "The choice depends on your goals. For weight loss, a combination of both is ideal.",
+        "If you're doing both in one session, strength training first helps maintain energy for lifting.",
+        "Balancing cardio and strength training in your routine ensures both endurance and muscle growth.",
+        "Cardio burns more calories during the workout, but strength training increases post-workout calorie burn due to muscle repair."
+      ]
+    },
+    {
+      "tag": "fitness_myths",
+      "patterns": [
+        "What are some common fitness myths?",
+        "Is lifting weights bad for women?",
+        "Do I need to work out every day to see results?",
+        "Can I target fat loss in specific areas?",
+        "Is more exercise always better?",
+        "Do I need supplements to build muscle?",
+        "Is running bad for your knees?",
+        "Will eating late at night make me gain weight?",
+        "Can I turn fat into muscle?",
+        "Is cardio the only way to lose weight?"
+      ],
+      "responses": [
+        "A common myth is that lifting weights will make women bulky. In reality, it builds lean muscle and strength.",
+        "Targeting fat loss in specific areas, like belly fat, isn’t possible. Fat loss happens evenly across the body.",
+        "More exercise isn't always better. Overtraining can lead to burnout and injuries; rest is just as important.",
+        "Supplements can help, but they’re not necessary if you’re getting enough nutrients from your diet.",
+        "Running isn’t inherently bad for your knees, but proper form and footwear are essential to prevent injuries."
+      ]
+    },
+    {
+      "tag": "healthy_habits",
+      "patterns": [
+        "What are some daily habits for a healthy lifestyle?",
+        "How do I build healthy habits?",
+        "What are simple changes to improve health?",
+        "How can I make exercise a habit?",
+        "What are tips for better sleep?",
+        "How do I manage my screen time?",
+        "What are some healthy habits for beginners?",
+        "How do I stay consistent with healthy habits?",
+        "What are some habits for reducing stress?",
+        "How do I replace bad habits with good ones?"
+      ],
+      "responses": [
+        "Build healthy habits by starting small, like walking 10 minutes daily or drinking more water.",
+        "Consistency is key. Set reminders or pair habits with existing routines, like stretching after brushing your teeth.",
+        "Prioritize sleep by keeping a regular bedtime, reducing screen time, and creating a relaxing nighttime routine.",
+        "Replace bad habits with positive ones, like swapping sugary drinks for water or a walk instead of watching TV.",
+        "Reduce stress with habits like deep breathing, mindfulness, or taking short breaks during work."
+      ]
+    },
+    {
+      "tag": "flexibility_vs_mobility",
+      "patterns": [
+        "What is the difference between flexibility and mobility?",
+        "How can I improve my mobility?",
+        "Do I need both flexibility and mobility?",
+        "What are the best exercises for mobility?",
+        "Is yoga good for mobility?",
+        "Should I prioritize flexibility over mobility?",
+        "What is the importance of mobility in fitness?",
+        "How do I combine flexibility and mobility training?",
+        "What limits mobility?",
+        "Can stretching improve mobility?"
+      ],
+      "responses": [
+        "Flexibility is the ability of muscles to stretch, while mobility is the range of motion in your joints.",
+        "Improving mobility involves dynamic stretches, foam rolling, and functional movement exercises.",
+        "Both are important; flexibility supports mobility, and mobility ensures safe and efficient movement.",
+        "Exercises like deep squats, hip openers, and thoracic rotations enhance mobility.",
+        "Yoga combines both flexibility and mobility, making it a great addition to your fitness routine."
+      ]
+    },
+    {
+      "tag": "fitness_apps",
+      "patterns": [
+        "What are the best apps for tracking fitness?",
+        "Can I use an app to track my workouts?",
+        "What are good apps for meal planning?",
+        "Are there apps for fitness beginners?",
+        "What are the best free fitness apps?",
+        "Can I track my steps with an app?",
+        "What are apps for home workouts?",
+        "How do I use apps to stay motivated?",
+        "What are apps for tracking progress?",
+        "Are fitness apps worth it?"
+      ],
+      "responses": [
+        "Popular fitness apps include MyFitnessPal for calorie tracking, Strava for running and cycling, and Nike Training Club for workouts.",
+        "Apps like Fitbit and Apple Health are great for tracking steps, heart rate, and general activity.",
+        "For meal planning, try apps like Mealime or Yummly, which offer customizable recipes.",
+        "Fitness apps for beginners, like 7-Minute Workout or C25K, are easy to follow and build consistency.",
+        "Many free apps, like FitOn and Freeletics, offer great resources for workouts and fitness planning."
+      ]
+    },
+    {
+      "tag": "nutrition_myths",
+      "patterns": [
+        "What are some common nutrition myths?",
+        "Is breakfast the most important meal of the day?",
+        "Do I need to cut carbs to lose weight?",
+        "Is fat bad for me?",
+        "Does eating late cause weight gain?",
+        "Are protein shakes necessary for muscle building?",
+        "Is eating more often better for metabolism?",
+        "Do I need to avoid gluten if I’m not allergic?",
+        "Are natural sugars healthier than processed sugars?",
+        "Does drinking lemon water burn fat?"
+      ],
+      "responses": [
+        "A common myth is that carbs cause weight gain. Whole carbs like vegetables and grains are vital for energy.",
+        "Fat isn’t bad for you; healthy fats, like those in avocados and nuts, are essential for your body.",
+        "Eating late doesn’t cause weight gain unless it leads to exceeding your daily calorie needs.",
+        "Protein shakes can be helpful, but they’re not necessary if you’re meeting your protein needs through food.",
+        "Lemon water is refreshing but doesn’t directly burn fat. A calorie deficit is key to weight loss."
+      ]
+    },
+    {
+      "tag": "active_recovery",
+      "patterns": [
+        "What is active recovery?",
+        "Should I do active recovery on rest days?",
+        "What are the best active recovery exercises?",
+        "Is yoga a good active recovery option?",
+        "How do I recover faster with active recovery?",
+        "What are examples of light exercises for recovery?",
+        "How often should I do active recovery?",
+        "What are the benefits of active recovery?",
+        "Can active recovery reduce soreness?",
+        "Is walking considered active recovery?"
+      ],
+      "responses": [
+        "Active recovery involves light exercises like walking, yoga, or swimming to improve circulation and reduce soreness.",
+        "It’s a great way to stay moving on rest days without straining your muscles.",
+        "Light activities like stretching, foam rolling, or a leisurely bike ride are ideal for active recovery.",
+        "Yoga is excellent for recovery, as it combines gentle movement with stretching and relaxation.",
+        "Incorporate active recovery 1-2 times a week to aid muscle repair and prevent stiffness."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "I don't understand",
+        "Can you say that again?",
+        "I don't know what you mean",
+        "What are you talking about?",
+        "I'm confused",
+        "That doesn't make sense to me",
+        "Can you repeat that?",
+        "Sorry, I didn't get that",
+        "I don't understand what you're saying"
+      ],
+      "responses": [
+        "I'm sorry, I didn't understand that. Could you rephrase?",
+        "I'm not sure I understand. Can you clarify your question?",
+        "I'm here to help, but I need a bit more detail. Could you explain differently?",
+        "I didn't catch that. Could you say it again, please?",
+        "I'm sorry, could you try asking in a different way?"
+      ]
+    }
+  ]
+}
