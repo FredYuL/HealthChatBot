@@ -74,7 +74,6 @@ def bag_of_words(sentence):
     return np.array(bag)
 
 
-# Function to predict the intent of the user's input
 def predict_class(sentence):
     """
     Predicts the intent of the input sentence using the trained model.
@@ -85,7 +84,13 @@ def predict_class(sentence):
     """
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
-    ERROR_THRESHOLD = 0.5
+    ERROR_THRESHOLD = 0.5  # Define the error threshold
+    
+    # Calculate error rate
+    max_probability = max(res)  # Get the highest probability from the prediction
+    error_rate = 1 - max_probability  # Error rate is 1 - highest probability
+    print(f"Current Error Rate: {error_rate:.2f}")  # Print the error rate with two decimal places
+
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
 
@@ -94,6 +99,8 @@ def predict_class(sentence):
         return [{'intent': classes[r[0]], 'probability': str(r[1])} for r in results]
     else:
         return None
+
+
 
 # Function to get a response based on the predicted intent
 def get_response(intents_list, intents_json):
@@ -118,7 +125,7 @@ def chatgpt_response(prompt):
         openai.api_key = "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"
         
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a fitness chatbot specializing in personalized advice."},
                 {"role": "user", "content": prompt}
