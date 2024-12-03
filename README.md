@@ -78,10 +78,4 @@ Access the chatbot locally at [http://127.0.0.1:5000](http://127.0.0.1:5000). It
 
 ---
 
-## Contact
-For issues, feel free to raise an [issue on GitHub](https://github.com/FredYuL/HealthChatBot/issues).
-
-
-```
-
 
