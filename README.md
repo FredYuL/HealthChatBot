@@ -62,10 +62,10 @@ python app.py
 ```
 
 ### Testing
-Access the chatbot locally at [http://127.0.0.1:5000](http://127.0.0.1:5000). It's also published through ngrok when you launch the server.
-
-
----
+Run the built testing file by 
+```
+python test.py
+```
 
 ## Possible Issues and Solutions
 - **Installation Problems**: Ensure all package versions listed in `requirements.txt` are compatible. Using Python 3.7 or 3.8 is recommended.
