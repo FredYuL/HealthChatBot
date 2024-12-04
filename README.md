@@ -43,6 +43,9 @@ pip install -r requirements.txt
 
 **Note**: Ensure compatibility between the versions of TensorFlow, NumPy, and Python. For best results, use Python 3.7 or 3.8 with the matching versions listed in `requirements.txt`.
 
+### OpenAI API Key
+Replace the API Key on line 126 in app.py with your true API Key to avoid problems with GPT API. 
+
 ---
 
 ## Optional: Retrain the Model
