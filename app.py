@@ -122,6 +122,7 @@ def chatgpt_response(prompt):
     import openai
     try:
         # Set your OpenAI API key here
+        # Replace API key with yours, this one has been disabled. 
         openai.api_key = "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"
         
         response = openai.ChatCompletion.create(
